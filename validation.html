@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="validation.css">
+</head>
+
+<body>
+
+    <h2>Modal Signup Form</h2>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="">
+            <div class="container">
+                <h1>Đăng ký tài khoản</h1>
+                <p>Bạn hãy điền các thông tin bên dưới nhé!</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input id="mail" type="text" placeholder="Nhập email" name="email" required>
+                <p id="err-email"></p>
+
+                <label for="psw"><b>Mật khẩu</b></label>
+                <input type="password" id="psw" placeholder="Nhập mật khẩu" name="psw" required>
+                <p id="err-psw"></p>
+
+                <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                <input type="password" id="pre-pass" placeholder="Nhập lại mật khẩu" name="psw-repeat" required>
+                <p id="err-psw-repeat"></p>
+
+                <label>
+                    <input type="checkbox" id="ckbox1" checked="checked" name="remember" style="margin-bottom:15px"> Lưu tài khoản
+                    <p id="ckbox2"> </p>
+                </label>
+
+                <p>Tôi đồng ý với các <a href="#" style="color:dodgerblue">điều khoản</a>.</p>
+
+
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Hủy</button>
+                    <button type="button" class="signupbtn">Đăng ký</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="validation.js"></script>
+
+</body>
+
+</html>
